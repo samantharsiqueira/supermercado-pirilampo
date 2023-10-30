@@ -11,6 +11,4 @@ const getOutOfStockProducts = () => {
   return newArray;
 };
 
-console.log(getOutOfStockProducts())
-
 module.exports = { getOutOfStockProducts };
