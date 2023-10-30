@@ -11,6 +11,5 @@ const getLowStockProducts = () => {
   return newArray;
 };
 
-console.log(getLowStockProducts())
 
 module.exports = { getLowStockProducts };
