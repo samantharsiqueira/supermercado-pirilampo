@@ -1,13 +1,17 @@
 const stockProducts = require('./data.json');
 
-const searchProductsByBrand = () => {
+const searchProductsByBrand = (product) => {
   // Desenvolva seu código dentro dessa função...
-  let inStock = 0;
+  let emptyArray = [];
   for (let index = 0; index < stockProducts.length; index += 1) {
-    inStock += stockProducts[index].quantityInStock
+    if (product === stockProducts[index].brand) {
+      emptyArray.push({
+        description: `${stockProducts[index].description}`,
+        formattedPrice: `R$ ${stockProducts[index].price.toFixed(2)}`,
+      });
+    }
   }
-  return inStock;
-};
+  return emptyArray;
 };
 
 module.exports = { searchProductsByBrand };

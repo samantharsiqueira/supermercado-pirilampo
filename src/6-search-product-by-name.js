@@ -7,11 +7,11 @@ const searchProductByName = (product) => {
     if (product === stockProducts[index].productName) {
       return {
         description: `${stockProducts[index].description}`,
-        formattedPrice: `R$${stockProducts[index].price.toFixed(2)}`,
+        formattedPrice: `R$ ${stockProducts[index].price.toFixed(2)}`,
       };
     }
   }
   return null;
 };
-console.log(searchProductByName())
+
 module.exports = { searchProductByName };
