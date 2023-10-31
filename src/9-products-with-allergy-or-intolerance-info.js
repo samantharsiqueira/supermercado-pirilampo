@@ -8,8 +8,8 @@ const getProductsWithAllergyOrIntoleranceInfo = () => {
       emptyArray.push({
         description: `${stockProducts[index].description}`,
         formattedPrice: `R$ ${stockProducts[index].price.toFixed(2)}`,
-        allergyOrIntoleranceMessage: `Pode conter:
-         ${stockProducts[index].allergyOrIntolerance.join(' ')}`,
+        allergyOrIntoleranceMessage:
+        `Pode conter: ${stockProducts[index].allergyOrIntolerance.join(' ')}`,
       });
     }
   }
