@@ -8,7 +8,7 @@ const getProductsOnSale = () => {
       emptyArray.push({
         description: `${stockProducts[index].description}`,
         formattedPrice: `R$ ${stockProducts[index].price.toFixed(2)}`,
-        onSale: `${stockProducts[index].onSale}`,
+        onSale: stockProducts[index].onSale,
       });
     }
   }
