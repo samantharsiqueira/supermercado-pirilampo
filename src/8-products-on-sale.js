@@ -15,6 +15,4 @@ const getProductsOnSale = () => {
   return emptyArray;
 };
 
-console.log(getProductsOnSale());
-
 module.exports = { getProductsOnSale };

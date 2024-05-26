@@ -10,11 +10,9 @@ const getProductsRichInVitamin = () => {
         formattedPrice: `R$ ${stockProducts[index].price.toFixed(2)}`,
         vitaminsInformation: Object.entries(stockProducts[index].nutritionalInfo.vitamins),
       });
-      console.log(Object.entries(stockProducts[index].nutritionalInfo.vitamins));
     }
   }
   return emptyArray;
 };
 
-console.log(getProductsRichInVitamin());
 module.exports = { getProductsRichInVitamin };
